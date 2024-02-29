@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convert Money</title>
+    <title>Convert currency</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="assets/dinheiro.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,18 +18,8 @@
         <label>
             Converter <b>de</b>
             <select id="convert-from-select" class="convert-select">
-                <option value="real-from">R$ Real Brasileiro</option>
-                <option value="dolar-from">US$ Dólar americano</option>
-                <option value="euro-from">€ Euro</option>
-                <option value="libra-from">£ Libra</option>
-            </select>
-        </label>
-
-        <label>
-            Converter <b>para</b>
-            <select id="convert-to-select" class="convert-select">
                 <option disabled selected>Escolha uma moeda </option>
-                <option value="real">R$ Real Brasileiro</option>
+                <option value="real" >R$ Real Brasileiro</option>
                 <option value="dolar">US$ Dólar americano</option>
                 <option value="euro">€ Euro</option>
                 <option value="libra">£ Libra</option>
@@ -36,8 +27,19 @@
         </label>
 
         <label>
+            Converter <b>para</b>
+            <select id="convert-to-select" class="convert-select">
+                <option disabled selected>Escolha uma moeda </option>
+                <option value="BRL" >R$ Real Brasileiro</option>
+                <option value="USD" >US$ Dólar americano</option>
+                <option value="EUR" >€ Euro</option>
+                <option value="GBP" >£ Libra</option>
+            </select>
+        </label>
+
+        <label>
             Valor
-            <input placeholder="Digite um valor..." class="input-currency">
+            <input type="number" placeholder="Digite um valor..." class="input-currency" min="1">
         </label>
 
         <button id="convert-button">Converter</button>
