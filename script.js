@@ -23,10 +23,7 @@ async function convertValues() {
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert")
     const currencyValueConverted = document.querySelector(".currency-value")
 
-    if (inputCurrencyValue === "") {
-        alert("Por favor, digite um valor antes de converter.");
-    }
-
+    
     /*Aqui vale para o TO  ou seja o valor que vai ser convertido*/ 
     if (selectTo.value == "USD") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
