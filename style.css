@@ -168,3 +168,18 @@ button:active{
     border-radius: 50%;
     box-shadow: 1px 4px 5px #00000083;
 }
+@media screen and (max-width: 550px) {
+    .main-container{
+        width: 350px;
+        height: 570px;
+    
+    }
+
+    .currency-value, .currency-value-to-convert {
+        font-size: 20px;
+     }
+
+     .flag-img {
+        width: 4.5rem;
+    }
+}
