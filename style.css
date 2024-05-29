@@ -6,56 +6,113 @@
 }
 
 body{
-    background-color: #8B51FD;
+    background: linear-gradient(to bottom, #0924249f 0%, #000d0ff8 100%), url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
 }
+ 
+    main{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
 .logo{
-    width: 300px;
-    display: block;
-    margin: 20px auto;
+    width: 100px;
 }
 
-main{
-    width: 375px;
-    background-color: #f4f4f4;
-    border-radius: 20px;
-    padding: 44px 24px 23px;
-    margin: 0 auto 40px;
+.main-container{
+    display: flex;
+    padding: 1rem 0 0.7rem;
+    width: 500px;
+    height: 620px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    background: linear-gradient(180deg, #27353fd3 0%, #12181fd3 100%);
+    border-radius: 0.5rem;
+    border: 1px solid #aabbbb59;
+    box-shadow: 0px 0px 10px #000000cb;
+    backdrop-filter: blur(5px);
 
+}
+
+.input-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 label{
-    color: #777777;
+    color: #fefefe;
+    font-size: 1rem;
     font-weight: 400;
-    font-size: 14px;
+    text-shadow: 0px 0px 2px #000000;
+    margin-bottom: 0.19rem;
+    width: 93%;
 }
 
+
 select, input{
-    background: white;
-    border: 1px solid #bbbbbb;
-    border-radius: 4px;
-    height: 48px;
-    width: 100%;
-    margin-bottom: 24px;
-    appearance: none;
-    padding-left: 18px;
+    width: 98%;
+    height: 50px;
+    margin-bottom: 0.5rem;
+    padding: 0.41rem 0.6rem 0.4rem 10px;
+    background: #132231 ;
+    color: #dedede;
+    font-size: 1rem;
     font-weight: 700;
-    font-size: 16px;
-    color: #555555;
+    border-radius: 0.5rem;
+    border: 1px solid #aabbbb;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #00000083;
+}
+
+input{
+    background: #132231 url(./assets/dinheiro.png);
+    background-position: 6.5px;
+    background-size: 17px;
+    background-repeat: no-repeat;
+    padding: 0.41rem 0.6rem 0.4rem 30px;
+}
+
+input::placeholder{
+    color: white;
+    font-size: 17px;
+}
+
+.label-input{
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 button{
-    background-color: #772fd3;
-    color: white;
-    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    background: #dddddd;
+    color: #132231;
     border: none;
-    width: 100%;
-    height: 48px;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 700;
+    box-shadow: 0px 0px 3px #00000083;
     cursor: pointer;
-
+    transition: 0.1s;
+    border-radius: 10px;
+    width: 88%;
+    height: 60px;
 }
+
+
 
 button:hover{
     opacity: 0.8;
@@ -65,34 +122,49 @@ button:active{
     opacity: 0.6;
 }
 
-section{
-    border: 1px solid #772fd3;
-    border-radius: 20px;
+.section-currency{
+    width: 100%;
     margin-top: 36px;
     padding: 12px;
     display: flex;
-    flex-direction: column ;
     align-items: center;
 }
 
-.currency-box{
-    display:flex;
+.currency-box {
+    padding: 15px 0 8px;
+    display: flex;
     flex-direction: column;
+    width: 100%;
+    text-align: center;
     align-items: center;
-    gap: 4px;
+    
 }
+
 
 #arrow-img{
     margin: 15px 0;
+    width: 2.5rem;
+    opacity: 0.7;
 }
 
 .currency{
-    color: #777777;
+    color: white;
     font-size: 14px;
 }
 
 .currency-value, .currency-value-to-convert{
-    color: #555555;
+    color: white;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
+}
+
+.currency-from{
+    color: white;
+}
+
+.flag-img{
+    width: 4.5rem;
+    margin-bottom: 3px;
+    border-radius: 50%;
+    box-shadow: 1px 4px 5px #00000083;
 }
