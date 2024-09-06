@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="200" src="https://nicolassaraivaa.github.io/photosredmi/imgProjects/currency.png"  />
+  <img height="200" widht="200" src="https://nicolassaraivaa.github.io/photosredmi/imgProjects/currency.png"  />
 </div>
 
 ###
