@@ -4,7 +4,7 @@
 
 ###
 
-<h2 align="center">Previsão do temo</h2>
+<h2 align="center">Conversor de moeda</h2>
 
 ###
 
